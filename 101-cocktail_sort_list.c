@@ -53,8 +53,8 @@ void cocktail_sort_list(listint_t **list)
 			}
 			start = curr;
 		}
-		/*if (!swapped)
-			break; */
+		if (!swapped)
+			break;
 		swapped = false;
 		end = end->prev;
 		while (end != start)
